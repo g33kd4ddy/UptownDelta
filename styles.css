@@ -1,7 +1,7 @@
 body{margin:0;font-family:"Georgia",serif;background:#0b0e1a;color:#f6e7c1;text-align:center}
 header{background:#091026;padding:20px;border-bottom:3px solid #c08c4d}
 .logo-area{display:flex;align-items:center;justify-content:center;gap:12px}
-.logo{width:80px;height:80px;border-radius:50%;background:#333;object-fit:cover}
+.logo{width:100px;height:100px;border-radius:50%;background:#333;object-fit:cover}
 .band-name{font-size:2rem;font-weight:700;color:#ffdd9a}
 nav{margin-top:10px}
 nav button{margin:8px;padding:10px 20px;font-size:1rem;background:#192238;color:#ffdd9a;border:2px solid #c08c4d;cursor:pointer;transition:.3s;border-radius:8px}
@@ -16,6 +16,56 @@ main{padding:40px 20px}
 .gallery-grid img{width:100%;border-radius:8px;border:3px solid #c08c4d;transition:transform .3s}
 .gallery-grid img:hover{transform:scale(1.05)}
 .gallery-note{font-style:italic;margin-top:10px;color:#e7cf9a}
+.HomeImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    margin: 1;
+    object-fit: contain;
+
+    /* Fade-in setup */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.HomeImage.fade-in {
+    opacity: 1;
+}
+.social-media {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #0b0e1a;
+}
+
+.social-media h2 {
+  color: #e7cf9a;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1); /* makes icons white */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
 table.center {
   margin-left: auto;
   margin-right: auto;
