@@ -1,12 +1,12 @@
-body{margin:0;font-family:"Georgia",serif;background:#0b0e1a;color:#f6e7c1;text-align:center}
-header{background:#091026;padding:20px;border-bottom:3px solid #c08c4d}
+body{margin:0;font-family:"Georgia",serif;background:#000000;color:#f6e7c1;text-align:center}
+header{background:#000000;padding:20px;border-bottom:3px solid #c08c4d}
 .logo-area{display:flex;align-items:center;justify-content:center;gap:12px}
 .logo{width:100px;height:100px;border-radius:50%;background:#333;object-fit:cover}
 .band-name{font-size:2rem;font-weight:700;color:#ffdd9a}
 nav{margin-top:10px}
-nav button{margin:8px;padding:10px 20px;font-size:1rem;background:#192238;color:#ffdd9a;border:2px solid #c08c4d;cursor:pointer;transition:.3s;border-radius:8px}
-nav button:hover{background:#c08c4d;color:#0b0e1a}
-.hero{background:url('pics/banner.jpg') center repeat,linear-gradient(#0b0e1a,#192238);padding:20px 20px;color:#ffdd9a;border-bottom:3px solid #c08c4d}
+nav button{margin:8px;padding:10px 20px;font-size:1rem;background:#000000;color:#ffdd9a;border:2px solid #c08c4d;cursor:pointer;transition:.3s;border-radius:8px}
+nav button:hover{background:#c08c4d;color:#000000}
+.hero{background:url('pics/banner.jpg') center repeat,linear-gradient(#000000,#000000);padding:20px 20px;color:#ffdd9a;border-bottom:3px solid #c08c4d}
 .hero h2{font-size:3rem;margin:0}
 .hero p{font-size:1.2rem;margin-top:10px}
 main{padding:40px 20px}
@@ -34,7 +34,7 @@ main{padding:40px 20px}
 .social-media {
   text-align: center;
   padding: 40px 20px;
-  background-color: #0b0e1a;
+  background-color: #000000;
 }
 
 .social-media h2 {
