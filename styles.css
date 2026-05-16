@@ -67,6 +67,12 @@ main{padding:40px 20px}
   transform: scale(1.2);
   opacity: 0.8;
 }
+
+.vid-player {
+  aspect-ratio: 16 / 9;
+  width: 480px;
+}
+
 table.center {
   margin-left: auto;
   margin-right: auto;
