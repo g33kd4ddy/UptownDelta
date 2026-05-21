@@ -70,6 +70,7 @@ main{padding:40px 20px}
 .vid-player {
   aspect-ratio: 16 / 9;
   width: 100%;
+  min-width:321px
 }
 
 table.center {
