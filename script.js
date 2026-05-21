@@ -12,3 +12,4 @@ const image = document.getElementById("responsiveImage");
             image.classList.add("fade-in");
         });
     }
+contentWindow.location.reload()
