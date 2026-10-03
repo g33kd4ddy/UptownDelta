@@ -65,4 +65,54 @@ function renderSongs(songs) {
   container.appendChild(table);
 }
 
+async function loadEvents() {
+  const container = document.getElementById("event-table-container");
+  if (!container) return;
+  container.textContent = "Loading events...";
+
+  try {
+    const response = await fetch("events.json");
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status} ${response.statusText}`);
+    }
+
+    const events = await response.json();
+    renderEvents(events);
+  } catch (error) {
+    container.innerHTML = `<p>Unable to load events: ${error.message}</p>`;
+  }
+}
+
+function renderEvents(events) {
+  const container = document.getElementById("event-table-container");
+  if (!container) return;
+
+  if (!Array.isArray(events) || events.length === 0) {
+    container.innerHTML = "<p>No events found.</p>";
+    return;
+  }
+
+  const table = document.createElement("table");
+  table.className = "center";
+
+  const thead = document.createElement("thead");
+  thead.innerHTML = `<tr><th>Date</th><th>Venue</th></tr>`;
+
+  const tbody = document.createElement("tbody");
+  events.forEach(({ date, venue }) => {
+    const row = document.createElement("tr");
+    const dateCell = document.createElement("td");
+    const venueCell = document.createElement("td");
+    dateCell.textContent = date;
+    venueCell.textContent = venue;
+    row.append(dateCell, venueCell);
+    tbody.appendChild(row);
+  });
+
+  table.append(thead, tbody);
+  container.innerHTML = "";
+  container.appendChild(table);
+}
+
 loadSongs();
+loadEvents();
