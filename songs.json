@@ -24,10 +24,6 @@
    "artist": "Gary Clark Jr"
  },
  {
-   "title": "Bystandar Blues",
-   "artist": "Uptown Delta"
- },
- {
    "title": "Cold Blooded",
    "artist": "Gary Clark Jr"
  },
@@ -44,7 +40,7 @@
    "artist": "Gary Clark Jr  (The Beatles)"
  },
  {
-   "title": "F*ck Up My Life Again",
+   "title": "F*ck My Life Up Again",
    "artist": "Marcus King"
  },
  {
@@ -71,6 +67,10 @@
    "title": "Homesick",
    "artist": "Marcus King"
  },
+  {
+   "title": "Honey Bee",
+   "artist": "Tom Petty"
+ },
  {
    "title": "Jesus Just Left Chicago",
    "artist": "ZZ Top"
@@ -88,16 +88,16 @@
    "artist": "Gary Clark Jr"
  },
  {
+   "title": "Midnight Train",
+   "artist": "Buddy Guy"
+ },
+ {
    "title": "Purple Haze",
    "artist": "Jimi Hendrix"
  },
  {
    "title": "Purple Rain",
    "artist": "Prince"
- },
- {
-   "title": "Red House",
-   "artist": "Jimi Hendrix"
  },
  {
    "title": "Soul Flower",
